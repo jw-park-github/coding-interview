@@ -14,3 +14,10 @@ def solution(my_string):
                 answer -= int(my_string[i+1])   # 뺀다
                 
     return answer
+
+'''
+# eval()을 사용한 풀이
+
+def solution(my_string):
+    return eval(my_string)
+'''
