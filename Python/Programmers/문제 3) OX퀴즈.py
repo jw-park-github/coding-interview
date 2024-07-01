@@ -8,25 +8,25 @@
 
 # 풀이 1
 def solution(quiz):
-    result = []
+    answer = []
+    
     for i in range(len(quiz)):
         quiz[i] = quiz[i].split(' ')
-        tmp = 0
-        if quiz[i][1] == '+':
-            tmp = int(quiz[i][0]) + int(quiz[i][2])
+        if quiz[i][1] == "+":
+            if int(quiz[i][0]) + int(quiz[i][2]) == int(quiz[i][4]):
+                answer.append("O")
+            else:
+                answer.append("X")
         else:
-            tmp = int(quiz[i][0]) - int(quiz[i][2])
-        
-        if tmp == int(quiz[i][4]):
-            result.append("O")
-        else:
-            result.append("X")
-    return result
-        
+            if int(quiz[i][0]) - int(quiz[i][2]) == int(quiz[i][4]):
+                answer.append("O")
+            else:
+                answer.append("X")
+            
     return answer
 
 '''
-1. 각각의 문자열에 대해 공백을 기준으로 나눠 리스트로 변환.
+1. 리스트 내 각각의 문자열에 대해 공백을 기준으로 나눠 리스트로 변환.
 2. 인덱스 0과 2에 대응되는 문자열을 int()로 형변환하고, 인덱스 1에 대응되는 문자열이 +면 두 수를 더하고, -면 뺀다.
 3. 더하거나 뺀 값을, 인덱스 4에 대응되는 문자열을 int()로 형변환 값과 비교하여
 3. 같으면 answer에 'O'를, 다르면 'X'를 추가.
