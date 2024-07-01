@@ -15,3 +15,5 @@ def solution(my_string):
 
     return answer + int(tmp) if tmp else answer    # 마지막 문자가 숫자면 int()로 형변환해서 지금까지의 총합에 합쳐서 반환하고
                                                    # 문자면 더하지 않고 현재까지의 총합만 반환 
+
+# 9~10: 처음 나오는 한자리 숫자 or 연결된 두자리 이상의 숫자를 tmp에 담는 과정
