@@ -2,6 +2,10 @@
 # 유형: 문자열
 # 날짜: 7/1(x)
 
+'''
+return z if x else y : x가 true면 z를 반환하고, false면 y를 반환.
+'''
+
 def solution(my_string):
     answer = 0
     tmp =''                         # 한자리 숫자 or 연결된 숫자를 담을 변수
