@@ -4,7 +4,7 @@
 
 SELECT FACTORY_ID, FACTORY_NAME, ADDRESS 
 FROM FOOD_FACTORY
-WHERE ADDRESS LIKE '강원도%'  #  ADDRESS 열의 값이 '강원도'로 시작하는 모든 행(Row)을 조회
+WHERE ADDRESS LIKE '강원도%'  #  ADDRESS 열의 값이 '강원도'로 시작하는 모든 행(Row)
 ORDER BY FACTORY_ID
 
 
