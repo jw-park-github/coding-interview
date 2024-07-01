@@ -1,6 +1,6 @@
 # 출저: https://school.programmers.co.kr/app/courses/17584/curriculum/lessons/197237#part-46571
 # 유형: 문자열
-# 날짜: 6/30(o)
+# 날짜: 6/30(o), 7/1(o)
 '''
 ※ int()는 - 부호가 붙은 정수를 음의 정수로 반환.
 ※ split()으로 N개의 변수에 나눠 담기 (num1, sign, num2 = left_e.split())
